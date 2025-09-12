@@ -1,0 +1,14 @@
+# This is a new defaults file that you can use to define rules for exporting or
+# importing files to and from Zettlr. The only two required properties are the
+# writer and reader ones. Without them, Zettlr will not be able to export or
+# import your files. You can choose any reader or writer that is supported by
+# Pandoc. Zettlr will automatically show the profile at appropriate locations
+# based on the values of the writer and reader properties.
+# More info: https://pandoc.org/MANUAL.html.
+reader: markdown
+writer: pdf
+pdf-engine: xelatex
+template: {{PATH-TO-TEMPLATES}}/Chicago-AuthorDate/template.tex
+csl: {{PATH-TO-TEMPLATES}}/Chicago-AuthorDate/Chicago-AuthorDate.csl
+citeproc: true
+shift-heading-level-by: -1
