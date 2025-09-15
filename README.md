@@ -5,6 +5,7 @@ This repo contains templates for writing academic essays in Markdown using Zettl
 - MLA 8th Edition
 - Chicago-Turbain 18th Edition (Note & Bibliography)
 - Chicago-Turbain 18th Edition (Author-Date)
+- APA 7th Edition
 
 ## Installation
 
@@ -28,7 +29,43 @@ title: This Is The Real Title
 ---
 ```
 
+### Template-Specific Documentation
 
-All of the templates also take the argument `author` and `date`, defaulting to my name (you can override this in the template itself) and the current date, respectively. The MLA template also offers the parameters `professor` and `course`. You can omit any of the options without errors.
+<details>
+<summary>Chicago Templates</summary>
+
+These templates offer the following variables:
+
+- `title` (you can also set this by making a top-level heading)
+- `author` (*default*: my name, but you can change this in the template)
+- `date` (*default*: today's date)
+</details>
+
+<details>
+<summary>MLA8 Template</summary>
+
+This template offers the following variables:
+
+- `title` (you can also set this by making a top-level heading)
+- `author` (*default*: my name, but you can change this in the template)
+- `date` (*default*: today's date)
+- `professor`
+- `course`
+</details>
+
+<details>
+<summary>APA7 Template</summary>
+
+This template offers the following variables:
+
+- `title` (you can also set this by making a top-level heading)
+- `author` (*default*: my name, but you can change this in the template)
+- `duedate` (*default*: today's date)
+- `professor`
+- `course`
+- `affiliation`
+
+You can also add an abstract or list of keywords using the `abstract` and `keywords` variables.
+</details>
 
 The templates all use citeproc/CSL for citations. [See the Zettlr docs](https://docs.zettlr.com/en/reference/settings/#citations) for more information. Essentially, you just need to point Zettlr to your CSL citation database and then use the syntax explained in the docs. Each template includes the relevant CSL styles, so you do not need to configure that.
