@@ -10,5 +10,7 @@ writer: pdf
 pdf-engine: xelatex
 template: {{PATH-TO-TEMPLATES}}/Chicago-Notes/template.tex
 csl: {{PATH-TO-TEMPLATES}}/Chicago-Notes/Chicago-Notes.csl
-citeproc: true
 shift-heading-level-by: -1
+filters:
+  - citeproc
+  - {{PATH-TO-TEMPLATES}}/wordcount.lua

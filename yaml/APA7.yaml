@@ -10,5 +10,7 @@ writer: pdf
 pdf-engine: xelatex
 template: {{PATH-TO-TEMPLATES}}/APA7/template.tex
 csl: {{PATH-TO-TEMPLATES}}/APA7/APA7.csl
-citeproc: true
 shift-heading-level-by: -1
+filters:
+  - citeproc
+  - {{PATH-TO-TEMPLATES}}/wordcount.lua

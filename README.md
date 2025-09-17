@@ -29,6 +29,10 @@ title: This Is The Real Title
 ---
 ```
 
+### Word Count
+
+Some assignements require you to have the word count in the essay. Unfortunately, it's pretty hard to get an accurate word count from Markdown and LaTeX because of citations, page numbers, etc. To resolve this, I have written a Lua filter to count the words in the document and then insert them. To use it, just write `{{words}}` where you'd like to have the word count inserted. It will appear automatically. The word count excludes the bibliography, page numbers, tables, and figure captions. It includes the title and in-text citations. This is pretty consistent with Word and similar tools.
+
 ### Template-Specific Documentation
 
 <details>
